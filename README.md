@@ -16,8 +16,8 @@ This is the backend server for an e-commerce website. It is built with Node.js, 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MannyLighthaus/ecommerce-backend.git
-cd ecommerce-backend
+git clone https://github.com/Manny1294/furniro-backend.git
+cd ecommerce-backend-main
 ```
 
 ### 2. Install dependencies
