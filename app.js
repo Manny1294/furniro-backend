@@ -13,7 +13,18 @@ dotenv.config();
 const app = express();
 
 // Middlewares
-app.use(cors()); // Allow Cross-Origin Requests
+// app.use(cors()); // Allow Cross-Origin Requests for local development
+
+const corsOptions = {
+  origin: [
+    "http://localhost:5173", // your local frontend during dev
+    "https://furniro-oi61.onrender.com", // deployed frontend URL
+  ],
+  credentials: true, //  this is used for  cookies/auth headers
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json()); // Parse incoming JSON requests
 
 // Use product routes

@@ -1,6 +1,6 @@
 import fetch from "node-fetch"; // fallback if needed, or just use global fetch
-import sequelize from "./config/db.js";
-import Product from "./models/Product.js";
+import sequelize from "../config/db.js";
+import Product from "../models/Product.js";
 
 async function seedProducts() {
   try {
